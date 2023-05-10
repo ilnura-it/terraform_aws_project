@@ -35,32 +35,32 @@ variable "instance_type" {
 
 variable "cidr_block" {
   description = "The cidr_block to create VPC"
-  type        = list(string)
-  default     = ["10.1.0.0/16"]
+  type        = string
+  default     = "10.1.0.0/16"
 }
 
 variable "cidr_block_pub1" {
   description = "The cidr_block for public subnet 1"
-  type        = list(string)
-  default     = ["10.1.0.0/24"]
+  type        = string
+  default     = "10.1.0.0/24"
 }
 
 variable "cidr_block_pub2" {
   description = "The cidr_block for public subnet 2"
-  type        = list(string)
-  default     = ["10.1.1.0/24"]
+  type        = string
+  default     = "10.1.1.0/24"
 }
 
 variable "cidr_block_priv1" {
   description = "The cidr_block for private subnet 1"
-  type        = list(string)
-  default     = ["10.1.2.0/24"]
+  type        = string
+  default     = "10.1.2.0/24"
 }
 
 variable "cidr_block_priv2" {
   description = "The cidr_block for private subnet 2"
-  type        = list(string)
-  default     = ["10.1.3.0/24"]
+  type        = string
+  default     = "10.1.3.0/24"
 }
 
 variable "my_ip" {
